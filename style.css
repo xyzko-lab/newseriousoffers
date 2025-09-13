@@ -1,0 +1,650 @@
+/*
+.etiqueta {
+position: fixed;
+margin: 5px 15px 45px 15px;
+padding: 36px;
+padding-right: 50px;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 20;
+text-shadow: 1px 3px 5px #7c2a2a7a,
+-4px -3px 6px #7c2a2a7a;
+box-shadow:
+1px 1px 0 #3c6c8a,
+2px 2px 0 #3c6c8a,
+3px 3px 0 #3c6c8a,
+4px 4px 0 #3c6c8a,
+5px 5px 0 #3c6c8a,
+10px 10px 0 #3c6c8a;
+transition: all 0.2s ease-in-out;
+border: 1px solid #D41E4C;
+transform: rotate(-0.8deg);
+font-style: normal;
+font-family: "Maria", sans-serif;
+color: #220033;
+font-size: 12px;
+line-height: 10px;
+background-color: #f6275f;
+
+}
+*/
+
+/*
+.fixed-disappear {
+position: fixed;
+bottom: 1px;
+right: 1px;
+color: rgb(141, 141, 141);
+border-radius: 1px;
+z-index: 3000;
+transition: opacity 0.2s ease-in-out;
+}
+
+.hidden-element {
+opacity: 0;
+pointer-events: none;
+}
+
+.etiqueta:hover {
+transform: rotate(180deg);
+
+box-shadow:
+1px 1px 0 #3c6c8a;
+
+}
+
+.quote-etiqueta {
+margin:0;
+font-size: 18px;
+}
+
+.autor-etiqueta{
+margin:0;
+font-size: 18px;
+}
+
+.legendas-etiqueta {
+margin:0;
+font-size: 14px;
+}
+*/
+
+/*color:#ff154c;*/
+/*color: #f6275f;*/
+/*background-color: #3b161e;*/
+
+@keyframes mover-gradiente {
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+.harpsichord {
+background-image: linear-gradient(
+90deg,
+#ff0080,
+#ff8c00,
+#40e0d0,
+#00ffff
+);
+
+/* Define o tamanho do fundo para que seja maior que a div */
+background-size: 200% 200%;
+
+/* Aplica a animação, com duração de 8 segundos e repetição infinita */
+animation: mover-gradiente 8s ease-in-out infinite;
+
+/* Estilos adicionais para visualização */
+width: 100%;
+height: 250px;
+}
+
+/*efeitosis*/
+
+/*
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+
+background-color: rgba(224,151, 18, 0.1);
+
+z-index: 4000;
+}
+*/
+
+.main-wrapper {
+padding: 2em;
+overflow-x: hidden;
+width: 100vw; /* Garante que o contêiner tenha 100% da largura da viewport */
+}
+
+.site-container {
+max-width: 48rem;
+margin: 0 auto; /* This centers the div horizontally */
+}
+
+.title-container {
+margin:10px 0 10px 0;
+max-width: 30rem;
+}
+
+body {
+cursor: url("dicursor.png"), auto;
+font-family: 'Chivo', sans-serif;
+font-weight:100;
+background-color: #3b161e;
+color: #e8154e;
+margin: 0;
+box-sizing: border-box;
+font-size: 10px;
+font-style: normal;
+letter-spacing: 0;
+overflow-x: hidden;
+}
+
+/* Ordem de estilo de link recomendada (L-V-H-A-F) */
+a:link {
+text-decoration: underline;
+color: #ea0050;
+}
+
+a:visited {
+text-decoration: none;
+color: #4780a1;
+text-shadow: 6px 6px 8px rgba(1, 1, 100, 1);
+cursor: url("dicursor2.png"), auto;
+}
+
+a:hover {
+text-decoration: none;
+color: #54a6d7;
+text-shadow: 6px 5px 4px rgba(1, 1, 100, 1),
+  10px 10px 3px rgba(1, 1, 100, 1);
+cursor: url("dicursor2.png"), auto;
+}
+
+a:active {
+color: #ff6300;
+text-shadow: 3px 3px 1px rgb(152, 0, 0);
+}
+
+a:focus {
+outline: 2px solid #00ff00;
+}
+
+.outlink {
+font-size: 15px;
+/* font-family: 'VT323', monospace; */
+
+color: rgb(0, 0, 0);
+background-color: rgb(255, 0, 98);
+padding: 1px 6px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+}
+
+img {
+max-width: 100%; height: auto; margin:0;
+}
+
+p {
+font-family: "Maria", sans-serif;
+line-height: 1.4em;
+font-style: normal;
+margin: 7px 0 7px 0;
+}
+
+ul li {
+margin: 8px;
+}
+
+hr {
+border: none;
+height: 1px;
+background-color: #5f2232;
+margin: 0 0 0 0 auto;
+}
+
+h4 {
+font-family: 'Chivo', sans-serif;
+font-weight: 300;
+font-style: normal;
+letter-spacing: 0;
+line-height: 1.3em;
+}
+
+h3 {
+font-size: 10px;
+letter-spacing: 1px;
+line-height: 1.2em;
+font-weight: 500;
+}
+
+h2 {
+margin: 5px 0 5px 0;
+font-size: 48px;
+letter-spacing: 0;
+
+}
+
+h1 {
+/* font-family: 'Maria', sans-serif; */
+margin: 5px 0 5px 0;
+font-size: 48px;
+letter-spacing: 0;
+
+}
+
+
+/*
+@keyframes cor-glitch {
+0% {
+color: #ff007f;
+}
+20% {
+color: #00ffaa;
+}
+40% {
+color: #ffaa00;
+}
+100% {
+color: #ff007f;
+}
+}
+.texto-glitch {
+animation-name: cor-glitch;
+
+animation-duration: 5s;
+
+animation-timing-function: steps(19);
+
+animation-iteration-count: infinite;
+}
+*/
+
+
+
+
+/*JOLLY ROGER*/
+
+.jollyroger {
+margin: 0;
+padding: 0 0 5px 15px;
+font-family: "Maria", sans-serif;
+letter-spacing: 5px;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 13px;
+filter: drop-shadow(13px 13px 1px black);
+}
+
+/*JOLLY ROGER*/
+
+.capa {
+padding:30px;
+text-shadow: 
+10px 10px 5px black
+}
+
+
+span#makethelogobigger {
+font-size:100px;
+line-height:77px;
+/*color:#ff154c;*/
+}
+
+/*BACKGROUND*/
+
+.adivcalledapple {
+padding: 5px;
+line-height: 4.2em;
+/*color: #f6275f;*/
+background-color: #330e1f;
+}
+
+
+
+/*ARTIGOS*/
+
+
+.number {
+font-family: 'Syne Mono', monospace;
+font-size:10px;
+padding:0;
+text-align: right;
+margin:0;
+color: #8cf5ff;
+text-shadow:
+0 0 8px #fff,
+0 0 3px #fff,
+0 0 1px #08f,
+0 0 10px #08f,
+0 0 10px #8cf5ff;
+}
+
+.article-background {
+padding:30px;
+box-shadow: 6px 6px 0 #290817,
+-2px 1px 8px #290817,
+15px 15px 0 #290817;
+}
+
+.article-background:hover {
+padding:30px;
+background-color: rgba(255, 0, 98, 0.2);
+box-shadow: 6px 6px 0 #FF0062,
+-2px 1px 8px #290817,
+15px 15px 0 #290817;
+}
+
+.article-title {
+
+margin: 0;
+line-height: 0.9em;
+letter-spacing:-1px;
+font-size: 48px;
+text-shadow: 
+3px 3px 3px black
+}
+
+.article-excerpt {
+/*text-align: justify;*/
+padding-top:20px;
+margin: 0;
+font-size: 1rem;
+line-height: 1.2rem;
+font-weight:800;
+letter-spacing:0;
+}
+
+.iasumario {
+font-family: 'Almarai', sans-serif;
+font-weight: 400;
+margin: 0 ;
+font-size: 1rem;
+letter-spacing: 0;
+
+}
+
+
+
+/*END ARTICLES*/
+
+
+
+.banner {
+text-transform: uppercase;
+/*border: 1px solid #5f2232;*/
+text-align:center;
+background-image: linear-gradient(to left, #970035, #d80065);
+-webkit-background-clip: text;
+background-clip: text;
+
+color: transparent;
+font-family: sans-serif;
+font-size: 52em;
+font-weight: 800;
+}
+
+.expediente {
+margin:3rem;
+font-size:1em;
+}
+
+.sticky-wrapper {
+background: linear-gradient(to bottom, #220033, #f50d79);
+border-radius: 420px;
+margin-bottom: 20px;
+padding-bottom: 200px;
+/* Defina uma altura mínima para que haja espaço de rolagem */
+min-height: 200vh;
+}
+
+/*
+.youbetcha {
+font-family: "Maria", sans-serif;
+background: linear-gradient(to right, #6366f1, #91c4cc);
+color: #ffffff;
+padding: 25px 0 25px 0;
+text-align: center;
+font-size: 50px;
+line-height: 1em;
+position: sticky;margin-right:
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+transition: background 0.8s ease;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+*/
+
+/*
+------------------------------------------------
+DiPletini®
+------------------------------------------------
+
+/\\_/\\
+( o.o )
+> ^ <
+
+------------------------------------------------
+*/
+
+/*
+.disombrini {
+background-color: #330e1f;
+}
+*/
+
+.superlink {
+color: #220033;
+}
+
+/*FANTASMAS*/
+
+.neon-glow {
+margin:-20px 0 ;
+text-align: center;
+line-height:50px;
+color: #fff;
+text-shadow:
+0 0 5px #fff,
+0 0 10px #fff,
+0 0 20px #08f,
+0 0 30px #08f;
+max-width: 100%;
+}
+
+.neon-aura {
+font-family: 'Beyonders', sans-serif;
+text-align: center;
+font-size: 8em;
+font-weight: 900;
+line-height:50px;
+color: #fff; /* Cor do texto, um branco puro para o centro do brilho */
+text-shadow:
+0 0 7px #fff,
+0 0 10px #FF0062,
+0 0 21px #FF0062,
+0 0 42px #FF0062,
+0 0 82px #FF0062,
+0 0 92px #FF0062,
+0 0 102px #FF0062,
+0 0 151px #FF0062;
+}
+
+.neon-febre {
+font-family: 'Sono', sans-serif;
+font-weight: 700;
+font-size:7em;
+color: #ffd700;
+text-shadow:
+4px 4px 1px black,
+6px 6px 3px black,
+8px 8px 8px black;
+}
+
+.fantasma {
+margin: 0 auto;
+background-color: #3f2153
+}
+
+.fantasma-container {
+margin:0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 15px;
+max-width: 100%;
+}
+
+.fantasma-de-leitura {
+margin: 0 auto;
+background-image: url("images/derrida-marx.jpg");
+background-repeat: repeat;
+background-size:300px;
+background-position: left;
+height: 450px;
+width: 300px;
+max-width: 100%;
+font-family: "Maria", sans-serif;
+color: white;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: row;
+gap: 3px;
+transform: rotate(-1deg);
+text-shadow: 10px 10px 15px #000;
+box-shadow: 10px 10px 15px #000;
+}
+
+.fantasma-de-leitura:hover {
+transform: rotate(0deg);
+}
+
+.longplay {
+margin: 0 auto;
+position: relative;
+background-image: url("images/jacque-dither.gif");
+background-repeat: no-repeat;
+background-size: 500px;
+background-position: center;
+height: 430px;
+width: 500px;
+max-width: 100%;
+font-family: "Maria", sans-serif;
+color: white;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: row;
+gap: 3px;
+z-index: 1001;
+transform: rotate(-3deg);
+text-shadow: 10px 10px 15px #000;
+box-shadow: 10px 10px 15px #000;
+}
+
+.longplay:hover {
+transform: rotate(0deg);
+background-image: url("images/s-l1200-sans-dither.png");
+}
+
+.fantasmas-de-video {
+max-width: 100%;
+margin: 0 auto;
+position: relative;
+background-image: url("images/title_high_and_low_blu-ray-dither.gif");
+background-repeat: repeat;
+background-size: 650px;
+background-position: center;
+height: 370px;
+width: 800px;
+font-family: "Maria", sans-serif;
+color: white;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: row;
+gap: 100px;
+z-index: 1001;
+transform: rotate(-3deg);
+text-shadow: 12px 21px 32px #000;
+box-shadow:
+-12px 21px 32px #000,
+12px 21px 32px #000;
+}
+
+.fantasmas-de-video:hover {
+transform: rotate(0deg);
+background-image: url("images/title_high_and_low_blu-ray.jpg");
+}
+
+.real {
+position: relative;
+margin: 0;
+background-color: rgb(90, 23, 23);
+}
+
+.granite {
+margin: 0;
+padding-top: 5em;
+padding-bottom: 5em;
+background-color: rgb(54, 14, 14);
+}
+
+.ads {
+
+margin: 0;
+background-color: rgb(0, 0, 0);
+
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: row;
+gap: 3px;
+}
+
+.adverse {
+margin:50px;
+background-color: rgb(0, 0, 0);
+margin-bottom:150px;
+padding:50px;
+border: 1px solid #FF8AB7;
+box-shadow: 0 0 85px rgba(200,200,300,1), 3px 3px 8px rgba(200,200,300,1);
+
+}
+
+.adverse img {
+width: 150px;
+height: auto;
+margin: 3px;
+}
+
+.perfumaria {
+box-shadow: 7px 12px 2px black;
+}
+
+html {
+overflow-x: hidden !important;
+}
